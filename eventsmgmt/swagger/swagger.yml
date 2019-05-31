@@ -1,0 +1,52 @@
+openapi: 3.0.1
+info:
+  title: booking-app
+  version: 0.0.1
+servers:
+- url: /
+paths:
+  /:
+    get:
+      operationId: index page
+      responses:
+        501:
+          description: not implemented
+          content:
+            application/json:
+              schema:
+                type: string
+                description: just a welcome message
+  /events:
+    get:
+      operationId: Getallevents
+      responses:
+        200:
+          description: Get all events
+          content:
+            application/json:
+              schema:
+                type: string
+                description: all events
+  /events/findevents:
+    get:
+      operationId: findevents
+      responses:
+        200:
+          description: Allow searching of events
+          content:
+            application/json:
+              schema:
+                type: string
+                description: all events
+  /events/addevent:
+    get:
+      operationId: addevent
+      responses:
+        200:
+          description: Allows addition of event. #@TODO: POST method
+          content:
+            application/json:
+              schema:
+                type: string
+                description: all events
+components: {}
