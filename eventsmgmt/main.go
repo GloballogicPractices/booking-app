@@ -20,7 +20,7 @@ func main() {
 
 	// Service port should be changed
 	server := http.Server{
-		Addr:         "127.0.0.1:9000",
+		Addr:         ":9000",
 		ReadTimeout:  30 * time.Second,
 		WriteTimeout: 60 * time.Second,
 		Handler:      loggedServer,
